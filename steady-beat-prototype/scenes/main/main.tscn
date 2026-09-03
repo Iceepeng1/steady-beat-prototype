@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cpdsg6icj8le7"]
 
 [ext_resource type="Script" uid="uid://cyx4bemg80nlg" path="res://scripts/main.gd" id="1_hyk8p"]
+[ext_resource type="AudioStream" uid="uid://brfr7atg7b15s" path="res://assets/audio/met1.wav" id="2_iuonh"]
 
 [node name="Main" type="Control" unique_id=672935443]
 layout_mode = 3
@@ -53,6 +54,9 @@ grow_horizontal = 2
 grow_vertical = 0
 focus_mode = 0
 text = "START/RESTART"
+
+[node name="MetronomePlayer" type="AudioStreamPlayer" parent="." unique_id=535745092]
+stream = ExtResource("2_iuonh")
 
 [connection signal="pressed" from="TapButton" to="." method="_on_tap_button_pressed"]
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

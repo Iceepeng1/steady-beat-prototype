@@ -69,6 +69,7 @@ func _record_tap() -> void:
 	$TapButton.text = "TAPS: %d" % tap_count
 
 func _show_target_beat() -> void:
+	$MetronomePlayer.play()
 	if pulse_tween:
 		pulse_tween.kill()
 
