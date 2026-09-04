@@ -12,6 +12,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hyk8p")
 bpm = 120.0
+total_beats = 12
+regular_volume_db = -1.0
 
 [node name="Background" type="ColorRect" parent="." unique_id=990593429]
 layout_mode = 1
